@@ -11,8 +11,7 @@ services:
       - "80:80"
 
   frontend:
-    platform: linux/amd64
-    image: gamshan/openmrs-reference-application-3-frontend:${TAG:-digidev}
+    image: gamshan/openmrs-reference-application-3-frontend:${TAG:-digipath}
     restart: "unless-stopped"
     ports:
       - "8080:80"
@@ -63,6 +62,8 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
     volumes:
       - db-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
 
 volumes:
   openmrs-data: ~
