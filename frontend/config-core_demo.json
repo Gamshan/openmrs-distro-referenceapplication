@@ -114,6 +114,15 @@
     "Brand color #1": "#005d5d"
   },
   "@openmrs/esm-patient-registration-app": {
+    "sections": ["demographics", "contact"],
+    "excludedFields": [ "gender" ],
+    "sectionDefinitions": [
+      {
+        "id": "demographics",
+        "name": "Basic details",
+        "fields": [ "name", "dob", "id" ]
+      }
+    ],
     "fieldDefinitions": [
       {
         "id": "Health Center",
@@ -249,48 +258,6 @@
         "uuid": "3a4b90f0-5df0-48b7-ba41-e2948d60b6a5",
         "type": "person attribute",
         "label": "POA at registration"
-      }
-    ],
-    "sections": [
-      "demographics",
-      "contact",
-      "relationships",
-      "extraInfo",
-      "GPC"
-    ],
-    "sectionDefinitions": [
-      {
-        "id": "extraInfo",
-        "name": "Extra info",
-        "fields": [
-          "Health Center",
-          "Other phone number",
-          "Registration No",
-          "Date",
-          "Hospital Name",
-          "Hospital type",
-          "NIC",
-          "Age",
-          "GN Division",
-          "GN Division Area",
-          "MOH Area",
-          "Nationality",
-          "Ethnicity",
-          "Civil Status",
-          "Education Level",
-          "Occupation"
-        ]
-      },
-      {
-        "id": "GPC",
-        "name": "GPC",
-        "fields": [
-          "Gravida",
-          "Parity",
-          "Children",
-          "No of miscarriages",
-          "POA at registration"
-        ]
       }
     ]
   }
