@@ -43,6 +43,38 @@
     "Brand color #1": "#005d5d"
   },
   "@openmrs/esm-patient-registration-app": {
+    "sections": [
+      "demographics",
+      "contact"
+    ],
+    "sectionDefinitions": [
+      {
+        "id": "demographics",
+        "name": "Basic details",
+        "fields": [
+          "name",
+          "dob",
+          "gender",
+          "id",
+          "Clinical No",
+          "NIC"
+        ]
+      }
+    ],
+    "fieldDefinitions": [
+      {
+        "id": "Clinical No",
+        "type": "person attribute",
+        "label": "Clinical No",
+        "uuid": "c1f26c3b-f7e3-43e8-acf5-4254822d3ed6"
+      },
+      {
+        "id": "NIC",
+        "type": "person attribute",
+        "label": "NIC No",
+        "uuid": "3593c721-cbb2-4c57-b02e-1c8f0f803bc6"
+      }
+    ],
     "fieldConfigurations": {
       "gender": [
         {
