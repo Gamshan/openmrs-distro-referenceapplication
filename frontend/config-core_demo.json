@@ -74,16 +74,7 @@
         "label": "NIC No",
         "uuid": "3593c721-cbb2-4c57-b02e-1c8f0f803bc6"
       }
-    ],
-    "fieldConfigurations": {
-      "gender": [
-        {
-          "id": "female",
-          "value": "female",
-          "label": "Female"
-        }
-      ]
-    }
+    ]
   },
   "@openmrs/esm-app-shell": {
     "Enabled feature flags": [
