@@ -13,7 +13,7 @@ COPY spa-assemble-config.json .
 COPY spa-build-config.json .
 
 COPY openmrs-esm-form-builder-app-3.1.1.tgz .
-COPY openmrs-esm-patient-digipaths-app-0.0.5.tgz .
+COPY openmrs-esm-patient-digipaths-app-1.0.0.tgz .
 COPY openmrs-esm-form-engine-app-11.3.0.tgz .
 
 ARG CACHE_BUST
