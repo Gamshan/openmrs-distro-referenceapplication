@@ -4,7 +4,1448 @@
     "showUpcomingAppointments": true,
     "extensionSlots": {
       "action-menu-patient-chart-items-slot": {
-        "order": ["order-basket-action-menu"]
+        "order": [
+          "order-basket-action-menu"
+        ]
+      },
+      "patient-chart-dashboard-slot": {
+        "add": [
+          "nav-group#ClinicalViews"
+        ],
+        "configure": {
+          "nav-group#ClinicalViews": {
+            "title": "Clinical Views",
+            "slotName": "clinical-views-group-slot",
+            "isExpanded": true
+          }
+        }
+      },
+      "clinical-views-group-slot": {
+        "add": [
+          "dashboard#clinical-summary",
+          "dashboard#common-assessment",
+          "dashboard#ht-specific",
+          "dashboard#dm-specific",
+          "dashboard#cvd-specific",
+          "dashboard#ckd-specific",
+          "dashboard#phq9",
+          "dashboard#depression-specific",
+          "nav-group#Referral"
+        ],
+        "order": [
+          "dashboard#clinical-summary",
+          "dashboard#common-assessment",
+          "dashboard#ht-specific",
+          "dashboard#dm-specific",
+          "dashboard#cvd-specific",
+          "dashboard#ckd-specific",
+          "dashboard#phq9",
+          "dashboard#depression-specific",
+          "nav-group#Referral"
+        ],
+        "configure": {
+          "dashboard#clinical-summary": {
+            "title": "Clinical Summary",
+            "path": "clinical-summary",
+            "slot": "patient-chart-clinical-summary-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#common-assessment": {
+            "title": "Common Assessment",
+            "path": "common-assessment",
+            "slot": "patient-chart-clinical-views-common-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#ht-specific": {
+            "title": "HT Specific",
+            "path": "ht-specific",
+            "slot": "patient-chart-clinical-views-ht-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#dm-specific": {
+            "title": "DM Specific",
+            "path": "dm-specific",
+            "slot": "patient-chart-clinical-views-dm-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#cvd-specific": {
+            "title": "CVD Specific",
+            "path": "cvd-specific",
+            "slot": "patient-chart-clinical-views-cvd-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#ckd-specific": {
+            "title": "CKD Specific",
+            "path": "ckd-specific",
+            "slot": "patient-chart-clinical-views-ckd-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#phq9": {
+            "title": "PHQ9",
+            "path": "phq9",
+            "slot": "patient-chart-clinical-views-phq9-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#depression-specific": {
+            "title": "Depression Specific",
+            "path": "depression-specific",
+            "slot": "patient-chart-clinical-views-depression-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "nav-group#Referral": {
+            "title": "Referral",
+            "slotName": "referral-group-slot",
+            "isExpanded": false
+          }
+        }
+      },
+      "patient-chart-clinical-summary-slot": {
+        "add": [
+          "clinical-views-summary#clinical-summary"
+        ],
+        "configure": {
+          "clinical-views-summary#clinical-summary": {
+            "tileDefinitions": [
+              {
+                "tileHeader": "Common Assessment",
+                "maxColumnsPerRow": 4,
+                "columns": [
+                  {
+                    "id": "smoking",
+                    "title": "Smoking",
+                    "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
+                    "concept": "163201AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "familyHistory",
+                    "title": "Family History (CVD)",
+                    "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
+                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "cvdRiskAssessment",
+                    "title": "CVD Risk Assessment",
+                    "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
+                    "concept": "163214AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "cvdRiskCategory",
+                    "title": "CVD Risk Category",
+                    "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
+                    "concept": "43ca6927-4e56-457a-be19-3aecf1d75a00",
+                    "hasSummary": true,
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "CVS Risk Factor Less than 5%": "#24a148",
+                      "CVS Risk Factor 5% to less than 10%": "#83A814",
+                      "CVS Risk Factor 10% to less than 20%": "#FC8400",
+                      "CVS Risk Factor 20% to less than 30%": "#d02670",
+                      "CVS Risk Factor Equal or more than 30%": "#da1e28"
+                    }
+                  },
+                  {
+                    "id": "medicationAdherence",
+                    "title": "Medication Adherence",
+                    "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
+                    "concept": "3dbd86f8-b07e-4a18-ac81-0a4f9b1b2f68",
+                    "hasSummary": true
+                  }
+                ]
+              },
+              {
+                "tileHeader": "HT Specific",
+                "columns": [
+                  {
+                    "id": "htGrade",
+                    "title": "Grade of Hypertension",
+                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
+                    "concept": "165583AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true,
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "Pre-hypertension": "#24a148",
+                      "Mild hypertension": "#83A814",
+                      "Moderate hypertension": "#FC8400",
+                      "Severe hypertension": "#da1e28",
+                      "Low blood pressure": "#6D00FC"
+                    }
+                  },
+                  {
+                    "id": "bpTarget",
+                    "title": "BP Target",
+                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
+                    "concept": "d94023d9-2c27-4ee2-9866-083e13a0c134",
+                    "hasSummary": true,
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "BP Controlled": "#24a148",
+                      "BP Uncontrolled": "#da1e28"
+                    }
+                  },
+                  {
+                    "id": "contraceptive",
+                    "title": "Contraceptive Use",
+                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
+                    "concept": "1386AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "pregnancy",
+                    "title": "Pregnancy",
+                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
+                    "concept": "1360AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  }
+                ]
+              },
+              {
+                "tileHeader": "DM Specific",
+                "maxColumnsPerRow": 4,
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date",
+                    "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                    "type": "encounterDatetime",
+                    "isDate": true,
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "diabeticRetinopathy",
+                    "title": "Diabetic Retinopathy",
+                    "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                    "concept": "0c46d7e8-a560-472f-a8fe-3feef2ded796",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "diabeticFootExam",
+                    "title": "Foot Examination",
+                    "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                    "concept": "2c14f493-f302-4338-8f5f-ac5f1a7b1b8b",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "activeDiabeticFootDisease",
+                    "title": "Active Foot Disease",
+                    "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                    "concept": "3225ad6e-387c-465e-b2e1-ac6d85ed77a2",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "glycaemicTargets",
+                    "title": "Glycaemic Control Targets",
+                    "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                    "concept": "e1a7aa14-bc8c-4acf-ba64-65e5a714d461",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "footcareAdvice",
+                    "title": "Footcare Advice",
+                    "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                    "concept": "1f19eee6-243c-4225-8130-6904e1744a6d",
+                    "hasSummary": true
+                  }
+                ]
+              },
+              {
+                "tileHeader": "CVD Specific",
+                "columns": [
+                  {
+                    "id": "familyHistoryCVD",
+                    "title": "Family History CVD",
+                    "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
+                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "anginaPain",
+                    "title": "Angina / Chest Pain",
+                    "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
+                    "concept": "125971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "calfPain",
+                    "title": "Calf Pain (PAD)",
+                    "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
+                    "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  }
+                ]
+              },
+              {
+                "tileHeader": "CKD Specific",
+                "maxColumnsPerRow": 4,
+                "columns": [
+                  {
+                    "id": "gfr",
+                    "title": "eGFR",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "161133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "gfrStage",
+                    "title": "GFR Stage",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "165570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true,
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "Chronic kidney disease, stage I": "#24a148",
+                      "Chronic kidney disease, stage II (mild)": "#24a148",
+                      "Chronic kidney disease, stage III (moderate)": "#FCEA28",
+                      "Chronic kidney disease, stage IIIA (moderate)": "#FCEA28",
+                      "Chronic kidney disease, stage IIIB (moderate)": "#FC8400",
+                      "Chronic kidney disease, stage IV (severe)": "#da1e28",
+                      "Chronic kidney disease, stage V": "#750000"
+                    }
+                  },
+                  {
+                    "id": "urineACR",
+                    "title": "Urine ACR",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "164948AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "uacrCategory",
+                    "title": "UACR Category",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "6b94fd7c-72f4-57ee-a169-d64de1e239dd",
+                    "hasSummary": true,
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "A1 - Normal to mildly increased (Preferred)": "#24a148",
+                      "A2 - Moderately increased": "#FCEA28",
+                      "A3 - Severely increased": "#FC8400"
+                    }
+                  },
+
+                  {
+                    "id": "serumCalcium",
+                    "title": "Serum Calcium",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "166038AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "serumPhosphate",
+                    "title": "Serum Phosphate",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "161154AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "sodium",
+                    "title": "Sodium (Na+)",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "1132AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "potassium",
+                    "title": "Potassium (K+)",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "chloride",
+                    "title": "Chloride (Cl-)",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "1134AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "ckdRisk",
+                    "title": "CKD Risk (KDIGO)",
+                    "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                    "concept": "c9ee2a8e-a338-54bd-8fb3-683580ef6899",
+                    "hasSummary": true,
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "G1A1 – Normal kidney function with normal to mildly increased albuminuria (Preferred)": "#24a148",
+                      "G2A1 – Mildly decreased kidney function with normal to mildly increased albuminuria (Preferred)": "#24a148",
+                      "G1A2 – Normal kidney function with moderately increased albuminuria (Preferred)": "#FCEA28",
+                      "G2A2 – Mild kidney function decrease with moderately increased albuminuria (Preferred)": "#FCEA28",
+                      "G3aA1 – Mild to moderate kidney function decrease with normal albuminuria (Preferred)": "#FCEA28",
+                      "G1A3 – Normal kidney function with severely increased albuminuria (Preferred)": "#FC8400",
+                      "G2A3 – Mild kidney decrease with severely increased albuminuria (Preferred)": "#FC8400",
+                      "G3aA2 – Mild to moderate kidney decrease with moderately increased albuminuria (Preferred)": "#FC8400",
+                      "G3bA1 – Moderate to severe kidney function decrease with normal albuminuria (Preferred)": "#FC8400",
+                      "G3aA3 – Mild to moderate decrease with severely increased albuminuria (Preferred)": "#da1e28",
+                      "G3bA2 – Moderate to severe decrease with moderately increased albuminuria (Preferred)": "#da1e28",
+                      "G4A1 – Severe kidney function decrease with normal albuminuria (Preferred)": "#da1e28",
+                      "G4A2 – Severe decrease with moderately increased albuminuria (Preferred)": "#da1e28",
+                      "G3bA3 – Moderate to severe decrease with severely increased albuminuria (Preferred)": "#da1e28",
+                      "G4A3 – Severe kidney failure with severely increased albuminuria (Preferred)": "#750000",
+                      "G5A1 – Kidney failure with normal albuminuria (Preferred)": "#750000",
+                      "G5A1 – Kidney failure with normal albuminuria (Preferred)": "#750000",
+                      "G5A3 – Kidney failure with severely increased albuminuria (Preferred)": "#750000"
+                    }
+                  }
+                ]
+              },
+              {
+                "tileHeader": "Depression Specific",
+                "columns": [
+                  {
+                    "id": "phq9Score",
+                    "title": "PHQ9 Score",
+                    "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
+                    "concept": "165137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "phq9Grade",
+                    "title": "PHQ9 Grade",
+                    "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
+                    "concept": "c38977c1-c14b-41a5-bc2b-d7a91e151ae9",
+                    "hasSummary": true,
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "Minimal": "#24a148",
+                      "Mild": "#009d9a",
+                      "Moderate": "#FCEA28",
+                      "Moderately Severe": "#d02670",
+                      "Severe": "#da1e28"
+                    }
+                  },
+                  {
+                    "id": "suicidalThoughts",
+                    "title": "Suicidal Thoughts",
+                    "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
+                    "concept": "b21cdead-2bbd-49d4-8f50-3d62f2678e00",
+                    "hasSummary": true
+                  },
+                  {
+                    "id": "sadpersonsRisk",
+                    "title": "Suicidal Risk (SADPERSONS)",
+                    "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
+                    "concept": "b9a06361-2a09-4fcb-be08-f86010cf43e4",
+                    "hasSummary": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-clinical-views-common-slot": {
+        "add": [
+          "encounter-list#common-assessment"
+        ],
+        "configure": {
+          "encounter-list#common-assessment": {
+            "tabDefinitions": [
+              {
+                "headerTitle": "Common Assessment",
+                "displayText": "Common",
+                "hasFilter": false,
+                "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "smoking",
+                    "title": "Smoking Status",
+                    "concept": "163201AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "familyHistory",
+                    "title": "Family History (Premature CVD)",
+                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "cvdRiskAssessment",
+                    "title": "CVD Risk Assessment Score",
+                    "concept": "163214AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "cvdRiskCategory",
+                    "title": "CVD Risk Category",
+                    "concept": "43ca6927-4e56-457a-be19-3aecf1d75a00",
+                    "type": "hivStatus",
+                    "statusColorMappings": {
+                      "7d5a45c0-eb6b-508a-a1b7-185637ebdb0b": "#24a148",
+                      "8892e750-b84e-5156-bb4d-31f4c6f2fc7e": "#83A814",
+                      "6ed15378-5a9f-5b8f-807b-9b5d8dea104b": "#FC8400",
+                      "bd4efb2a-cf82-5a43-bb6e-46287f5f6097": "#d02670",
+                      "47c35b6d-2bd5-5eb6-952e-aff7a7043dc1": "#da1e28"
+                    }
+                  },
+                  {
+                    "id": "lifestyleAdvice",
+                    "title": "Lifestyle Advice Given",
+                    "concept": "135797AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "medicationAdherence",
+                    "title": "Medication Adherence Assessment",
+                    "concept": "3dbd86f8-b07e-4a18-ac81-0a4f9b1b2f68"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "Common Assessment",
+                    "uuid": "7d62aaa0-a710-4be9-92c8-5c16e64d76ea"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-clinical-views-ht-slot": {
+        "add": [
+          "encounter-list#ht-specific"
+        ],
+        "configure": {
+          "encounter-list#ht-specific": {
+            "tabDefinitions": [
+              {
+                "headerTitle": "HT Specific",
+                "displayText": "HT Specific",
+                "hasFilter": false,
+                "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "htGrade",
+                    "title": "Grade of Hypertension",
+                    "concept": "165583AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "statusColorMappings": {
+                      "165206AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
+                      "165203AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#83A814",
+                      "165204AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#FC8400",
+                      "165205AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28",
+                      "ddb2407f-d6fb-4251-9e60-7624d0d01c64": "#6D00FC"
+                    }
+                  },
+                  {
+                    "id": "bpTarget",
+                    "title": "BP Target",
+                    "concept": "d94023d9-2c27-4ee2-9866-083e13a0c134",
+                    "statusColorMappings": {
+                      "d39019f3-840c-4a53-b715-de302a8c3e63": "#24a148",
+                      "3f5b99b3-6727-435d-b450-d8c679fbea6b": "#da1e28"
+                    }
+                  },
+                  {
+                    "id": "contraceptive",
+                    "title": "Contraceptive Use",
+                    "concept": "1386AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "pregnancy",
+                    "title": "Pregnancy (Current or Planning)",
+                    "concept": "1360AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "HT Specific 2",
+                    "uuid": "02b8f479-0e95-4b31-a82d-c47f71e7d705"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-clinical-views-dm-slot": {
+        "add": [
+          "encounter-list#dm-specific"
+        ],
+        "configure": {
+          "encounter-list#dm-specific": {
+            "tabDefinitions": [
+              {
+                "headerTitle": "DM Assessment",
+                "displayText": "Assessment",
+                "tabName": "Assessment",
+                "hasFilter": false,
+                "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "diabeticRetinopathy",
+                    "title": "Diabetic Retinopathy",
+                    "concept": "0c46d7e8-a560-472f-a8fe-3feef2ded796"
+                  },
+                  {
+                    "id": "diabeticEyeDisease",
+                    "title": "Diabetic Eye Disease",
+                    "concept": "527c9c61-d248-4f15-bb87-2c9928d064eb"
+                  },
+                  {
+                    "id": "diabeticMaculopathy",
+                    "title": "Diabetic Maculopathy",
+                    "concept": "36a4e7e6-9f72-40c5-88b5-db2252df6867"
+                  },
+                  {
+                    "id": "diabeticFootExam",
+                    "title": "Foot Examination",
+                    "concept": "2c14f493-f302-4338-8f5f-ac5f1a7b1b8b"
+                  },
+                  {
+                    "id": "activeDiabeticFootDisease",
+                    "title": "Active Foot Disease",
+                    "concept": "3225ad6e-387c-465e-b2e1-ac6d85ed77a2"
+                  },
+                  {
+                    "id": "amputation",
+                    "title": "Amputation",
+                    "concept": "3498f1da-1bca-4405-9e06-0fb3b79871da"
+                  },
+                  {
+                    "id": "dialysis",
+                    "title": "Dialysis",
+                    "concept": "a9f0dbd9-7b7e-480a-97b8-47926e55aac3"
+                  },
+                  {
+                    "id": "deformity",
+                    "title": "Deformity",
+                    "concept": "f958313b-b1f8-4b16-8a4e-3f552d4e40a4"
+                  },
+                  {
+                    "id": "footcareAdvice",
+                    "title": "Footcare Advice",
+                    "concept": "1f19eee6-243c-4225-8130-6904e1744a6d"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "DM Specific",
+                    "uuid": "b5642f6f-fc23-45ef-aec8-b415872d8334"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              },
+              {
+                "headerTitle": "Neuropathy & Vasculopathy",
+                "displayText": "Neuropathy",
+                "tabName": "Neuropathy",
+                "hasFilter": false,
+                "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "reflexes",
+                    "title": "Reflexes",
+                    "concept": "0e01f0f3-d563-4500-afa6-d220f9ad0ce3"
+                  },
+                  {
+                    "id": "sensation",
+                    "title": "Sensation (Monofilament)",
+                    "concept": "6ad23b03-9f2d-4841-af32-ed9ba0ac0005"
+                  },
+                  {
+                    "id": "dorsalisPedis",
+                    "title": "Dorsalis Pedis & Posterior Tibial Pulses",
+                    "concept": "e0bb89bd-0310-4054-a0b3-562e96aec078"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "DM Specific",
+                    "uuid": "b5642f6f-fc23-45ef-aec8-b415872d8334"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              },
+              {
+                "headerTitle": "Glycaemic Control",
+                "displayText": "Glycaemic",
+                "tabName": "Glycaemic",
+                "hasFilter": false,
+                "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "glycaemicTargetResult",
+                    "title": "DM Target FBS",
+                    "concept": "74f2085a-ccff-49bb-a8d1-42b23f1c2682"
+                  },
+                  {
+                    "id": "glycaemicTargets",
+                    "title": "Glycaemic Control Targets",
+                    "concept": "e1a7aa14-bc8c-4acf-ba64-65e5a714d461"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "DM Specific",
+                    "uuid": "b5642f6f-fc23-45ef-aec8-b415872d8334"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-clinical-views-cvd-slot": {
+        "add": [
+          "encounter-list#cvd-specific"
+        ],
+        "configure": {
+          "encounter-list#cvd-specific": {
+            "tabDefinitions": [
+              {
+                "headerTitle": "CVD Specific",
+                "displayText": "CVD Specific",
+                "hasFilter": false,
+                "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "familyHistoryCVD",
+                    "title": "Family History CVD",
+                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "anginaPain",
+                    "title": "Angina / Chest Pain",
+                    "concept": "125971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "calfPain",
+                    "title": "Calf Pain (PAD)",
+                    "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "CVD Specific",
+                    "uuid": "b39c65a0-c2f2-4240-8f26-e601def69956"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-clinical-views-ckd-slot": {
+        "add": [
+          "encounter-list#ckd-specific"
+        ],
+        "configure": {
+          "encounter-list#ckd-specific": {
+            "tabDefinitions": [
+              {
+                "headerTitle": "CKD Specific",
+                "displayText": "CKD Specific",
+                "hasFilter": false,
+                "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "creatinine",
+                    "title": "Creatinine",
+                    "concept": "164364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "gfr",
+                    "title": "eGFR",
+                    "concept": "161133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "urineACR",
+                    "title": "Urine ACR (mg/g)",
+                    "concept": "164948AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "gfrStage",
+                    "title": "GFR Stage",
+                    "concept": "165570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "120575AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
+                      "120574AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
+                      "120579AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#FCEA28",
+                      "2c156b19-3b11-4e11-9ae2-5ea2bff2b093": "#FCEA28",
+                      "3034271b-5d91-4616-9f49-8a8cae5c2e76": "#FC8400",
+                      "120578AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28",
+                      "120577AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#750000"
+                    }
+                  },
+                  {
+                    "id": "uacrCategory",
+                    "title": "UACR Category",
+                    "concept": "6b94fd7c-72f4-57ee-a169-d64de1e239dd",
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "a4a116dd-f136-5657-a53b-d5e1ceba7c66": "#24a148",
+                      "6ba3ebe3-b4ad-52f4-9391-56888b900cfc": "#FCEA28",
+                      "cfd81344-f233-5868-974a-efb49a3cf710": "#FC8400"
+                    }
+                  },
+                  {
+                    "id": "ckdRisk",
+                    "title": "CKD Risk (KDIGO)",
+                    "concept": "c9ee2a8e-a338-54bd-8fb3-683580ef6899",
+                    "type": "hivStatus",
+                    "isColoredTag": true,
+                    "statusColorMappings": {
+                      "a7b3aa06-223c-52b2-84b5-a495dffd81fd": "#24a148",
+                      "bae75281-7a46-59b2-9ba8-f77d471cb832": "#24a148",
+                      "d8d11f0c-787c-5e2a-a759-72afd58e87a4": "#FCEA28",
+                      "0ce38575-eda1-5dfa-9bfc-9940750bb0bf": "#FCEA28",
+                      "60063d49-cff2-51ff-a9f6-de8a48cc5a68": "#FCEA28",
+                      "ebd839ff-d386-5fa9-8769-bfcb66a7b4c6": "#FC8400",
+                      "36650ce0-9a16-5bda-827b-563b5282b4cc": "#FC8400",
+                      "c4fac37c-0bff-5d03-bf8d-893ca9f801b3": "#FC8400",
+                      "4ee3092d-da29-5ab0-8562-4670bb3317ee": "#FC8400",
+                      "bf929d5b-2964-5b4d-9301-4933d5b1b1b0": "#da1e28",
+                      "a371154a-ee8c-5375-9144-3086a9c6d065": "#da1e28",
+                      "119fe70c-44b0-519e-9880-ae25d0b0052e": "#da1e28",
+                      "c46d38a0-b953-5f4e-9eca-f3f9b77f8c31": "#da1e28",
+                      "b9c4e776-4d2d-5c59-a5b9-ff3c4d0e9e5c": "#da1e28",
+                      "1972734a-30ea-5c15-bf9a-3843b86e0d03": "#750000",
+                      "8f1214c9-1dfb-5ee4-aab3-4692afa5da27": "#750000",
+                      "1c874a66-dea1-5cde-a552-491757e8fb63": "#750000",
+                      "9a22772e-1f9c-5fcb-ab66-9fa5b1c77b38": "#750000"
+                    }
+                  },
+                  {
+                    "id": "serumCalcium",
+                    "title": "Serum Calcium",
+                    "concept": "166038AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "serumPhosphate",
+                    "title": "Serum Phosphate",
+                    "concept": "161154AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "sodium",
+                    "title": "Sodium (Na+) mmol/l",
+                    "concept": "1132AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "potassium",
+                    "title": "Potassium (K+) mmol/l",
+                    "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "chloride",
+                    "title": "Chloride (Cl-) mmol/l",
+                    "concept": "1134AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "CKD Specific",
+                    "uuid": "4668d188-77cb-48b8-87ee-9c3d03846713"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-clinical-views-depression-slot": {
+        "add": [
+          "encounter-list#depression-specific"
+        ],
+        "configure": {
+          "encounter-list#depression-specific": {
+            "tabDefinitions": [
+              {
+                "headerTitle": "Depression Specific",
+                "displayText": "Depression Specific",
+                "hasFilter": false,
+                "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "phq9Score",
+                    "title": "PHQ9 Score",
+                    "concept": "165137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "phq9Grade",
+                    "title": "PHQ9 Grade",
+                    "concept": "c38977c1-c14b-41a5-bc2b-d7a91e151ae9",
+                    "type": "hivStatus",
+                    "statusColorMappings": {
+                      "1dc89a9b-76d6-40b7-b398-2b6355edba92": "#24a148",
+                      "1498AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#009d9a",
+                      "1499AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#007d79",
+                      "e00d166a-5d05-49eb-8882-6ef9043df4b3": "#d02670",
+                      "1500AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28"
+                    }
+                  },
+                  {
+                    "id": "familyHistoryDepression",
+                    "title": "Family History of Depression",
+                    "concept": "babf617f-73c5-40e1-bcea-6e5822dd3a43"
+                  },
+                  {
+                    "id": "psychiatricHistory",
+                    "title": "History of Other Psychiatric Illnesses",
+                    "concept": "129fc0a1-e9ee-441c-8f70-37931cc64b9e"
+                  },
+                  {
+                    "id": "suicidalThoughts",
+                    "title": "Suicidal Thoughts",
+                    "concept": "b21cdead-2bbd-49d4-8f50-3d62f2678e00"
+                  },
+                  {
+                    "id": "sadpersonsRisk",
+                    "title": "Suicidal Risk (SADPERSONS)",
+                    "concept": "b9a06361-2a09-4fcb-be08-f86010cf43e4"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "Depression Specific",
+                    "uuid": "c8fa83dd-1377-4cf4-bb83-76d61098f74d"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "referral-group-slot": {
+        "add": [
+          "dashboard#referral-hypertension",
+          "dashboard#referral-diabetes",
+          "dashboard#referral-cvd",
+          "dashboard#referral-ckd",
+          "dashboard#referral-depression"
+        ],
+        "order": [
+          "dashboard#referral-hypertension",
+          "dashboard#referral-diabetes",
+          "dashboard#referral-cvd",
+          "dashboard#referral-ckd",
+          "dashboard#referral-depression"
+        ],
+        "configure": {
+          "dashboard#referral-hypertension": {
+            "title": "Hypertension",
+            "path": "referral-hypertension",
+            "slot": "patient-chart-referral-hypertension-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#referral-diabetes": {
+            "title": "Diabetes",
+            "path": "referral-diabetes",
+            "slot": "patient-chart-referral-diabetes-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#referral-cvd": {
+            "title": "CVD",
+            "path": "referral-cvd",
+            "slot": "patient-chart-referral-cvd-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#referral-ckd": {
+            "title": "CKD",
+            "path": "referral-ckd",
+            "slot": "patient-chart-referral-ckd-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          },
+          "dashboard#referral-depression": {
+            "title": "Depression",
+            "path": "referral-depression",
+            "slot": "patient-chart-referral-depression-slot",
+            "columns": 1,
+            "hideDashboardTitle": true
+          }
+        }
+      },
+      "patient-chart-referral-hypertension-slot": {
+        "add": [
+          "encounter-list#referral-hypertension"
+        ],
+        "configure": {
+          "encounter-list#referral-hypertension": {
+            "hideTabs": true,
+            "hideTitle": true,
+            "columnSpan": 4,
+            "tabDefinitions": [
+              {
+                "headerTitle": "Hypertension Referral",
+                "displayText": "Hypertension Referral",
+                "hasFilter": false,
+                "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "HT Referral",
+                    "uuid": "2a9db8c4-86ae-4036-95ef-84740daff723"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-referral-diabetes-slot": {
+        "add": [
+          "encounter-list#referral-diabetes"
+        ],
+        "configure": {
+          "encounter-list#referral-diabetes": {
+            "hideTabs": true,
+            "hideTitle": true,
+            "columnSpan": 4,
+            "tabDefinitions": [
+              {
+                "headerTitle": "Diabetes Referral",
+                "displayText": "Diabetes Referral",
+                "hasFilter": false,
+                "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "DM Referral",
+                    "uuid": "9f4c5ea4-3f3d-4e57-87d3-20906bdf84a0"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-referral-cvd-slot": {
+        "add": [
+          "encounter-list#referral-cvd"
+        ],
+        "configure": {
+          "encounter-list#referral-cvd": {
+            "hideTabs": true,
+            "hideTitle": true,
+            "columnSpan": 4,
+            "tabDefinitions": [
+              {
+                "headerTitle": "CVD Referral",
+                "displayText": "CVD Referral",
+                "hasFilter": false,
+                "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "CVD Referral",
+                    "uuid": "b39c65a0-c2f2-4240-8f26-e601def69956"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-referral-ckd-slot": {
+        "add": [
+          "encounter-list#referral-ckd"
+        ],
+        "configure": {
+          "encounter-list#referral-ckd": {
+            "hideTabs": true,
+            "hideTitle": true,
+            "columnSpan": 4,
+            "tabDefinitions": [
+              {
+                "headerTitle": "CKD Referral",
+                "displayText": "CKD Referral",
+                "hasFilter": false,
+                "encounterType": "2d182641-2108-47b9-910e-533d65dfa02f",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "CKD Referral",
+                    "uuid": "c2f6e0c9-efc9-43cf-8c65-1512b67eaeb2"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-referral-depression-slot": {
+        "add": [
+          "encounter-list#referral-depression"
+        ],
+        "configure": {
+          "encounter-list#referral-depression": {
+            "hideTabs": true,
+            "hideTitle": true,
+            "columnSpan": 4,
+            "tabDefinitions": [
+              {
+                "headerTitle": "Depression Referral",
+                "displayText": "Depression Referral",
+                "hasFilter": false,
+                "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "Depression Referral",
+                    "uuid": "c8fa83dd-1377-4cf4-bb83-76d61098f74d"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "patient-chart-clinical-views-phq9-slot": {
+        "add": [
+          "encounter-list#phq9"
+        ],
+        "configure": {
+          "encounter-list#phq9": {
+            "tabDefinitions": [
+              {
+                "headerTitle": "PHQ9",
+                "displayText": "PHQ9",
+                "hasFilter": false,
+                "encounterType": "2d182641-2108-47b9-910e-533d65dfa02f",
+                "columns": [
+                  {
+                    "id": "encounterDatetime",
+                    "title": "Date and Time",
+                    "type": "encounterDatetime",
+                    "isDate": true
+                  },
+                  {
+                    "id": "littleInterest",
+                    "title": "Little Interest/Pleasure",
+                    "concept": "167006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "feelingDown",
+                    "title": "Feeling Down/Depressed",
+                    "concept": "167007AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "troubleSleeping",
+                    "title": "Trouble Sleeping",
+                    "concept": "167068AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "feelingTired",
+                    "title": "Feeling Tired",
+                    "concept": "167069AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "poorAppetite",
+                    "title": "Poor Appetite",
+                    "concept": "167070AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "feelingBad",
+                    "title": "Feeling Bad About Yourself",
+                    "concept": "167071AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "troubleConcentrating",
+                    "title": "Trouble Concentrating",
+                    "concept": "167072AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "movingSlowly",
+                    "title": "Moving/Speaking Slowly",
+                    "concept": "167073AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "thoughtsDead",
+                    "title": "Thoughts of Being Dead",
+                    "concept": "167074AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "PHQ9",
+                    "uuid": "e30b18c4-3efb-413c-a473-91b259c4a4c0"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              }
+            ]
+          }
+        }
       }
     }
   },
