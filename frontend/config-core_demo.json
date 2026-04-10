@@ -4,9 +4,7 @@
     "showUpcomingAppointments": true,
     "extensionSlots": {
       "action-menu-patient-chart-items-slot": {
-        "order": [
-          "order-basket-action-menu"
-        ]
+        "order": ["order-basket-action-menu"]
       },
       "patient-chart-dashboard-slot": {
         "add": [
@@ -309,8 +307,8 @@
                     "statusColorMappings": {
                       "Chronic kidney disease, stage I": "#24a148",
                       "Chronic kidney disease, stage II (mild)": "#24a148",
-                      "Chronic kidney disease, stage III (moderate)": "#FCEA28",
-                      "Chronic kidney disease, stage IIIA (moderate)": "#FCEA28",
+                      "Chronic kidney disease, stage III (moderate)": "#83A814",
+                      "Chronic kidney disease, stage IIIA (moderate)": "#83A814",
                       "Chronic kidney disease, stage IIIB (moderate)": "#FC8400",
                       "Chronic kidney disease, stage IV (severe)": "#da1e28",
                       "Chronic kidney disease, stage V": "#750000"
@@ -333,10 +331,13 @@
                     "isColoredTag": true,
                     "statusColorMappings": {
                       "A1 - Normal to mildly increased (Preferred)": "#24a148",
-                      "A2 - Moderately increased": "#FCEA28",
+                      "A2 - Moderately increased": "#83A814",
                       "A3 - Severely increased": "#FC8400"
                     }
                   },
+
+
+
 
                   {
                     "id": "serumCalcium",
@@ -384,9 +385,9 @@
                     "statusColorMappings": {
                       "G1A1 – Normal kidney function with normal to mildly increased albuminuria (Preferred)": "#24a148",
                       "G2A1 – Mildly decreased kidney function with normal to mildly increased albuminuria (Preferred)": "#24a148",
-                      "G1A2 – Normal kidney function with moderately increased albuminuria (Preferred)": "#FCEA28",
-                      "G2A2 – Mild kidney function decrease with moderately increased albuminuria (Preferred)": "#FCEA28",
-                      "G3aA1 – Mild to moderate kidney function decrease with normal albuminuria (Preferred)": "#FCEA28",
+                      "G1A2 – Normal kidney function with moderately increased albuminuria (Preferred)": "#83A814",
+                      "G2A2 – Mild kidney function decrease with moderately increased albuminuria (Preferred)": "#83A814",
+                      "G3aA1 – Mild to moderate kidney function decrease with normal albuminuria (Preferred)": "#83A814",
                       "G1A3 – Normal kidney function with severely increased albuminuria (Preferred)": "#FC8400",
                       "G2A3 – Mild kidney decrease with severely increased albuminuria (Preferred)": "#FC8400",
                       "G3aA2 – Mild to moderate kidney decrease with moderately increased albuminuria (Preferred)": "#FC8400",
@@ -398,10 +399,11 @@
                       "G3bA3 – Moderate to severe decrease with severely increased albuminuria (Preferred)": "#da1e28",
                       "G4A3 – Severe kidney failure with severely increased albuminuria (Preferred)": "#750000",
                       "G5A1 – Kidney failure with normal albuminuria (Preferred)": "#750000",
-                      "G5A1 – Kidney failure with normal albuminuria (Preferred)": "#750000",
+                      "G5A2 – Kidney failure with moderately increased albuminuria (Preferred)": "#750000",
                       "G5A3 – Kidney failure with severely increased albuminuria (Preferred)": "#750000"
                     }
                   }
+
                 ]
               },
               {
@@ -424,7 +426,7 @@
                     "statusColorMappings": {
                       "Minimal": "#24a148",
                       "Mild": "#009d9a",
-                      "Moderate": "#FCEA28",
+                      "Moderate": "#83A814",
                       "Moderately Severe": "#d02670",
                       "Severe": "#da1e28"
                     }
@@ -891,8 +893,8 @@
                     "statusColorMappings": {
                       "120575AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
                       "120574AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
-                      "120579AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#FCEA28",
-                      "2c156b19-3b11-4e11-9ae2-5ea2bff2b093": "#FCEA28",
+                      "120579AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#83A814",
+                      "2c156b19-3b11-4e11-9ae2-5ea2bff2b093": "#83A814",
                       "3034271b-5d91-4616-9f49-8a8cae5c2e76": "#FC8400",
                       "120578AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28",
                       "120577AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#750000"
@@ -906,7 +908,7 @@
                     "isColoredTag": true,
                     "statusColorMappings": {
                       "a4a116dd-f136-5657-a53b-d5e1ceba7c66": "#24a148",
-                      "6ba3ebe3-b4ad-52f4-9391-56888b900cfc": "#FCEA28",
+                      "6ba3ebe3-b4ad-52f4-9391-56888b900cfc": "#83A814",
                       "cfd81344-f233-5868-974a-efb49a3cf710": "#FC8400"
                     }
                   },
@@ -919,9 +921,9 @@
                     "statusColorMappings": {
                       "a7b3aa06-223c-52b2-84b5-a495dffd81fd": "#24a148",
                       "bae75281-7a46-59b2-9ba8-f77d471cb832": "#24a148",
-                      "d8d11f0c-787c-5e2a-a759-72afd58e87a4": "#FCEA28",
-                      "0ce38575-eda1-5dfa-9bfc-9940750bb0bf": "#FCEA28",
-                      "60063d49-cff2-51ff-a9f6-de8a48cc5a68": "#FCEA28",
+                      "d8d11f0c-787c-5e2a-a759-72afd58e87a4": "#83A814",
+                      "0ce38575-eda1-5dfa-9bfc-9940750bb0bf": "#83A814",
+                      "60063d49-cff2-51ff-a9f6-de8a48cc5a68": "#83A814",
                       "ebd839ff-d386-5fa9-8769-bfcb66a7b4c6": "#FC8400",
                       "36650ce0-9a16-5bda-827b-563b5282b4cc": "#FC8400",
                       "c4fac37c-0bff-5d03-bf8d-893ca9f801b3": "#FC8400",
@@ -937,6 +939,7 @@
                       "9a22772e-1f9c-5fcb-ab66-9fa5b1c77b38": "#750000"
                     }
                   },
+
                   {
                     "id": "serumCalcium",
                     "title": "Serum Calcium",
