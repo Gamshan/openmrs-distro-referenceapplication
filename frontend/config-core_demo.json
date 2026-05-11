@@ -157,7 +157,7 @@
                     "id": "medicationAdherence",
                     "title": "Medication Adherence",
                     "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
-                    "concept": "3dbd86f8-b07e-4a18-ac81-0a4f9b1b2f68",
+                    "concept": "164075AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   }
                 ]
@@ -185,13 +185,13 @@
                     "id": "bpTarget",
                     "title": "BP Target",
                     "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
-                    "concept": "d94023d9-2c27-4ee2-9866-083e13a0c134",
+                    "concept": "89163c5c-bbf9-5fff-b5e8-8a98d2d0be9b",
                     "hasSummary": true,
                     "type": "hivStatus",
                     "isColoredTag": true,
                     "statusColorMappings": {
-                      "BP Controlled": "#24a148",
-                      "BP Uncontrolled": "#da1e28"
+                      "Blood Pressure Control": "#24a148",
+                      "Poor hypertension control": "#da1e28"
                     }
                   },
                   {
@@ -203,9 +203,9 @@
                   },
                   {
                     "id": "pregnancy",
-                    "title": "Pregnancy",
+                    "title": "Currently Pregnant ",
                     "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
-                    "concept": "1360AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "1434AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   }
                 ]
@@ -215,46 +215,38 @@
                 "maxColumnsPerRow": 4,
                 "columns": [
                   {
-                    "id": "encounterDatetime",
-                    "title": "Date",
-                    "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
-                    "type": "encounterDatetime",
-                    "isDate": true,
-                    "hasSummary": true
-                  },
-                  {
                     "id": "diabeticRetinopathy",
                     "title": "Diabetic Retinopathy",
                     "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
-                    "concept": "0c46d7e8-a560-472f-a8fe-3feef2ded796",
+                    "concept": "142429AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "diabeticFootExam",
                     "title": "Foot Examination",
                     "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
-                    "concept": "2c14f493-f302-4338-8f5f-ac5f1a7b1b8b",
+                    "concept": "165471AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "activeDiabeticFootDisease",
                     "title": "Active Foot Disease",
                     "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
-                    "concept": "3225ad6e-387c-465e-b2e1-ac6d85ed77a2",
+                    "concept": "142452AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "glycaemicTargets",
                     "title": "Glycaemic Control Targets",
                     "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
-                    "concept": "e1a7aa14-bc8c-4acf-ba64-65e5a714d461",
+                    "concept": "7a9c7d10-287a-508d-8306-b74ece5afaae",
                     "hasSummary": true
                   },
                   {
                     "id": "footcareAdvice",
-                    "title": "Footcare Advice",
+                    "title": "Footcare Advice ",
                     "encounterType": "a06729d8-5f1a-4a96-a4ed-e2f80d76ed99",
-                    "concept": "1f19eee6-243c-4225-8130-6904e1744a6d",
+                    "concept": "206a3061-594c-5ea6-943c-9b820c1e01b5",
                     "hasSummary": true
                   }
                 ]
@@ -278,7 +270,7 @@
                   },
                   {
                     "id": "calfPain",
-                    "title": "Calf Pain (PAD)",
+                    "title": "Clave Pain",
                     "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
                     "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
@@ -307,8 +299,8 @@
                     "statusColorMappings": {
                       "Chronic kidney disease, stage I": "#24a148",
                       "Chronic kidney disease, stage II (mild)": "#24a148",
-                      "Chronic kidney disease, stage III (moderate)": "#83A814",
-                      "Chronic kidney disease, stage IIIA (moderate)": "#83A814",
+                      "Chronic kidney disease, stage III (moderate)": "#FCEA28",
+                      "Chronic kidney disease, stage IIIA (moderate)": "#FCEA28",
                       "Chronic kidney disease, stage IIIB (moderate)": "#FC8400",
                       "Chronic kidney disease, stage IV (severe)": "#da1e28",
                       "Chronic kidney disease, stage V": "#750000"
@@ -316,9 +308,9 @@
                   },
                   {
                     "id": "urineACR",
-                    "title": "Urine ACR",
+                    "title": "Urine ACR (mg/g)",
                     "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
-                    "concept": "164948AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "4ea016ce-a896-582e-8d99-143ea929ad3b",
                     "hasSummary": true
                   },
                   {
@@ -331,45 +323,41 @@
                     "isColoredTag": true,
                     "statusColorMappings": {
                       "A1 - Normal to mildly increased (Preferred)": "#24a148",
-                      "A2 - Moderately increased": "#83A814",
+                      "A2 - Moderately increased": "#FCEA28",
                       "A3 - Severely increased": "#FC8400"
                     }
                   },
-
-
-
-
                   {
                     "id": "serumCalcium",
-                    "title": "Serum Calcium",
+                    "title": "Serum Calcium (mmol/L)",
                     "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
                     "concept": "166038AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "serumPhosphate",
-                    "title": "Serum Phosphate",
+                    "title": "Serum Phosphate (g/dL)",
                     "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
                     "concept": "161154AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "sodium",
-                    "title": "Sodium (Na+)",
+                    "title": "Sodium (Na+) mmol/l",
                     "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
                     "concept": "1132AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "potassium",
-                    "title": "Potassium (K+)",
+                    "title": "Potassium (K+) mmol/l",
                     "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
                     "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "chloride",
-                    "title": "Chloride (Cl-)",
+                    "title": "Chloride (Cl-) mmol/l",
                     "encounterType": "b903a423-48e0-4d77-b2e7-7ea386c4c725",
                     "concept": "1134AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
@@ -385,9 +373,9 @@
                     "statusColorMappings": {
                       "G1A1 – Normal kidney function with normal to mildly increased albuminuria (Preferred)": "#24a148",
                       "G2A1 – Mildly decreased kidney function with normal to mildly increased albuminuria (Preferred)": "#24a148",
-                      "G1A2 – Normal kidney function with moderately increased albuminuria (Preferred)": "#83A814",
-                      "G2A2 – Mild kidney function decrease with moderately increased albuminuria (Preferred)": "#83A814",
-                      "G3aA1 – Mild to moderate kidney function decrease with normal albuminuria (Preferred)": "#83A814",
+                      "G1A2 – Normal kidney function with moderately increased albuminuria (Preferred)": "#FCEA28",
+                      "G2A2 – Mild kidney function decrease with moderately increased albuminuria (Preferred)": "#FCEA28",
+                      "G3aA1 – Mild to moderate kidney function decrease with normal albuminuria (Preferred)": "#FCEA28",
                       "G1A3 – Normal kidney function with severely increased albuminuria (Preferred)": "#FC8400",
                       "G2A3 – Mild kidney decrease with severely increased albuminuria (Preferred)": "#FC8400",
                       "G3aA2 – Mild to moderate kidney decrease with moderately increased albuminuria (Preferred)": "#FC8400",
@@ -399,11 +387,9 @@
                       "G3bA3 – Moderate to severe decrease with severely increased albuminuria (Preferred)": "#da1e28",
                       "G4A3 – Severe kidney failure with severely increased albuminuria (Preferred)": "#750000",
                       "G5A1 – Kidney failure with normal albuminuria (Preferred)": "#750000",
-                      "G5A2 – Kidney failure with moderately increased albuminuria (Preferred)": "#750000",
                       "G5A3 – Kidney failure with severely increased albuminuria (Preferred)": "#750000"
                     }
                   }
-
                 ]
               },
               {
@@ -420,29 +406,29 @@
                     "id": "phq9Grade",
                     "title": "PHQ9 Grade",
                     "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
-                    "concept": "c38977c1-c14b-41a5-bc2b-d7a91e151ae9",
+                    "concept": "8a653e79-3a11-571e-a2de-23e6163b62e0",
                     "hasSummary": true,
                     "isColoredTag": true,
                     "statusColorMappings": {
-                      "Minimal": "#24a148",
-                      "Mild": "#009d9a",
-                      "Moderate": "#83A814",
-                      "Moderately Severe": "#d02670",
-                      "Severe": "#da1e28"
+                      "Minimal Depression": "#24a148",
+                      "Mild depression": "#009d9a",
+                      "Mild to moderate depression": "#FCEA28",
+                      "Moderately Severe Depression": "#d02670",
+                      "Severe Depression": "#da1e28"
                     }
                   },
                   {
                     "id": "suicidalThoughts",
                     "title": "Suicidal Thoughts",
                     "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
-                    "concept": "b21cdead-2bbd-49d4-8f50-3d62f2678e00",
+                    "concept": "125562AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
                   },
                   {
                     "id": "sadpersonsRisk",
                     "title": "Suicidal Risk (SADPERSONS)",
                     "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
-                    "concept": "b9a06361-2a09-4fcb-be08-f86010cf43e4",
+                    "concept": "72f00424-5560-4c7f-914c-dfb979cd08e9",
                     "hasSummary": true
                   }
                 ]
@@ -501,12 +487,12 @@
                   {
                     "id": "lifestyleAdvice",
                     "title": "Lifestyle Advice Given",
-                    "concept": "135797AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    "concept": "e7d81a1e-a76f-505e-a276-e8bf650bbc2c"
                   },
                   {
                     "id": "medicationAdherence",
                     "title": "Medication Adherence Assessment",
-                    "concept": "3dbd86f8-b07e-4a18-ac81-0a4f9b1b2f68"
+                    "concept": "164075AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "actions",
@@ -561,16 +547,16 @@
                       "165203AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#83A814",
                       "165204AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#FC8400",
                       "165205AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28",
-                      "ddb2407f-d6fb-4251-9e60-7624d0d01c64": "#6D00FC"
+                      "135576AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#6D00FC"
                     }
                   },
                   {
                     "id": "bpTarget",
                     "title": "BP Target",
-                    "concept": "d94023d9-2c27-4ee2-9866-083e13a0c134",
+                    "concept": "89163c5c-bbf9-5fff-b5e8-8a98d2d0be9b",
                     "statusColorMappings": {
-                      "d39019f3-840c-4a53-b715-de302a8c3e63": "#24a148",
-                      "3f5b99b3-6727-435d-b450-d8c679fbea6b": "#da1e28"
+                      "cff7d75c-4279-5ca2-aff1-1b9722681a05": "#24a148",
+                      "158423AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28"
                     }
                   },
                   {
@@ -580,8 +566,13 @@
                   },
                   {
                     "id": "pregnancy",
-                    "title": "Pregnancy (Current or Planning)",
-                    "concept": "1360AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    "title": "Currently Pregnant ",
+                    "concept": "1434AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "planningpregnant",
+                    "title": "Pregnancy Planning ",
+                    "concept": "1435AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "actions",
@@ -631,47 +622,57 @@
                   {
                     "id": "diabeticRetinopathy",
                     "title": "Diabetic Retinopathy",
-                    "concept": "0c46d7e8-a560-472f-a8fe-3feef2ded796"
+                    "concept": "142429AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "diabeticEyeDisease",
                     "title": "Diabetic Eye Disease",
-                    "concept": "527c9c61-d248-4f15-bb87-2c9928d064eb"
+                    "concept": "f81834c7-8bc5-519e-9b09-73ed2c292a29"
+                  },
+                  {
+                    "id": "proliferative",
+                    "title": "Proliferative",
+                    "concept": "128401AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "diabeticMaculopathy",
                     "title": "Diabetic Maculopathy",
-                    "concept": "36a4e7e6-9f72-40c5-88b5-db2252df6867"
+                    "concept": "2cb18207-160a-5e58-97da-96a7826a7d6c"
                   },
                   {
                     "id": "diabeticFootExam",
                     "title": "Foot Examination",
-                    "concept": "2c14f493-f302-4338-8f5f-ac5f1a7b1b8b"
+                    "concept": "165471AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "activeDiabeticFootDisease",
                     "title": "Active Foot Disease",
-                    "concept": "3225ad6e-387c-465e-b2e1-ac6d85ed77a2"
+                    "concept": "142452AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "amputation",
                     "title": "Amputation",
-                    "concept": "3498f1da-1bca-4405-9e06-0fb3b79871da"
+                    "concept": "164009AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "dialysis",
                     "title": "Dialysis",
-                    "concept": "a9f0dbd9-7b7e-480a-97b8-47926e55aac3"
+                    "concept": "161196AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "deformity",
                     "title": "Deformity",
-                    "concept": "f958313b-b1f8-4b16-8a4e-3f552d4e40a4"
+                    "concept": "155871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "footDiseaseRisk",
+                    "title": "Foot Disease Risk",
+                    "concept": "9eecba64-854a-59d0-bd47-531cb00faad6"
                   },
                   {
                     "id": "footcareAdvice",
                     "title": "Footcare Advice",
-                    "concept": "1f19eee6-243c-4225-8130-6904e1744a6d"
+                    "concept": "206a3061-594c-5ea6-943c-9b820c1e01b5"
                   },
                   {
                     "id": "actions",
@@ -710,17 +711,17 @@
                   {
                     "id": "reflexes",
                     "title": "Reflexes",
-                    "concept": "0e01f0f3-d563-4500-afa6-d220f9ad0ce3"
+                    "concept": "25a47da8-8aa6-5a7c-a271-eb58c326d40a"
                   },
                   {
                     "id": "sensation",
                     "title": "Sensation (Monofilament)",
-                    "concept": "6ad23b03-9f2d-4841-af32-ed9ba0ac0005"
+                    "concept": "91db94e5-bc72-4210-a2ed-c9202f53f741"
                   },
                   {
                     "id": "dorsalisPedis",
                     "title": "Dorsalis Pedis & Posterior Tibial Pulses",
-                    "concept": "e0bb89bd-0310-4054-a0b3-562e96aec078"
+                    "concept": "04882de3-e6ca-59f0-8452-2236a897e0ea"
                   },
                   {
                     "id": "actions",
@@ -759,12 +760,12 @@
                   {
                     "id": "glycaemicTargetResult",
                     "title": "DM Target FBS",
-                    "concept": "74f2085a-ccff-49bb-a8d1-42b23f1c2682"
+                    "concept": "84270936-45c7-5fd3-a95b-be067270b1c2"
                   },
                   {
                     "id": "glycaemicTargets",
                     "title": "Glycaemic Control Targets",
-                    "concept": "e1a7aa14-bc8c-4acf-ba64-65e5a714d461"
+                    "concept": "7a9c7d10-287a-508d-8306-b74ece5afaae"
                   },
                   {
                     "id": "actions",
@@ -822,7 +823,7 @@
                   },
                   {
                     "id": "calfPain",
-                    "title": "Calf Pain (PAD)",
+                    "title": "Clave Pain",
                     "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
@@ -871,18 +872,13 @@
                   },
                   {
                     "id": "creatinine",
-                    "title": "Creatinine",
+                    "title": "Creatinine (mg/dL)",
                     "concept": "164364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "gfr",
                     "title": "eGFR",
                     "concept": "161133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  },
-                  {
-                    "id": "urineACR",
-                    "title": "Urine ACR (mg/g)",
-                    "concept": "164948AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "gfrStage",
@@ -893,12 +889,16 @@
                     "statusColorMappings": {
                       "120575AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
                       "120574AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
-                      "120579AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#83A814",
-                      "2c156b19-3b11-4e11-9ae2-5ea2bff2b093": "#83A814",
+                      "2c156b19-3b11-4e11-9ae2-5ea2bff2b093": "#FCEA28",
                       "3034271b-5d91-4616-9f49-8a8cae5c2e76": "#FC8400",
                       "120578AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28",
                       "120577AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#750000"
                     }
+                  },
+                  {
+                    "id": "urineACR",
+                    "title": "Urine ACR (mg/g)",
+                    "concept": "4ea016ce-a896-582e-8d99-143ea929ad3b"
                   },
                   {
                     "id": "uacrCategory",
@@ -908,7 +908,7 @@
                     "isColoredTag": true,
                     "statusColorMappings": {
                       "a4a116dd-f136-5657-a53b-d5e1ceba7c66": "#24a148",
-                      "6ba3ebe3-b4ad-52f4-9391-56888b900cfc": "#83A814",
+                      "6ba3ebe3-b4ad-52f4-9391-56888b900cfc": "#FCEA28",
                       "cfd81344-f233-5868-974a-efb49a3cf710": "#FC8400"
                     }
                   },
@@ -921,9 +921,9 @@
                     "statusColorMappings": {
                       "a7b3aa06-223c-52b2-84b5-a495dffd81fd": "#24a148",
                       "bae75281-7a46-59b2-9ba8-f77d471cb832": "#24a148",
-                      "d8d11f0c-787c-5e2a-a759-72afd58e87a4": "#83A814",
-                      "0ce38575-eda1-5dfa-9bfc-9940750bb0bf": "#83A814",
-                      "60063d49-cff2-51ff-a9f6-de8a48cc5a68": "#83A814",
+                      "d8d11f0c-787c-5e2a-a759-72afd58e87a4": "#FCEA28",
+                      "0ce38575-eda1-5dfa-9bfc-9940750bb0bf": "#FCEA28",
+                      "60063d49-cff2-51ff-a9f6-de8a48cc5a68": "#FCEA28",
                       "ebd839ff-d386-5fa9-8769-bfcb66a7b4c6": "#FC8400",
                       "36650ce0-9a16-5bda-827b-563b5282b4cc": "#FC8400",
                       "c4fac37c-0bff-5d03-bf8d-893ca9f801b3": "#FC8400",
@@ -939,20 +939,19 @@
                       "9a22772e-1f9c-5fcb-ab66-9fa5b1c77b38": "#750000"
                     }
                   },
-
                   {
                     "id": "serumCalcium",
-                    "title": "Serum Calcium",
+                    "title": "Serum Calcium (mmol/L)",
                     "concept": "166038AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "serumPhosphate",
-                    "title": "Serum Phosphate",
+                    "title": "Serum Phosphate (g/dL)",
                     "concept": "161154AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "sodium",
-                    "title": "Sodium (Na+) mmol/l",
+                    "title": "Sodium (Na+) mmol/ll",
                     "concept": "1132AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
@@ -965,7 +964,6 @@
                     "title": "Chloride (Cl-) mmol/l",
                     "concept": "1134AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
-
                   {
                     "id": "actions",
                     "title": "Actions",
@@ -1001,6 +999,7 @@
               {
                 "headerTitle": "Depression Specific",
                 "displayText": "Depression Specific",
+                "tabName": "PHQ9 Assessment",
                 "hasFilter": false,
                 "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
                 "columns": [
@@ -1018,35 +1017,113 @@
                   {
                     "id": "phq9Grade",
                     "title": "PHQ9 Grade",
-                    "concept": "c38977c1-c14b-41a5-bc2b-d7a91e151ae9",
+                    "concept": "8a653e79-3a11-571e-a2de-23e6163b62e0",
                     "type": "hivStatus",
                     "statusColorMappings": {
-                      "1dc89a9b-76d6-40b7-b398-2b6355edba92": "#24a148",
-                      "1498AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#009d9a",
-                      "1499AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#007d79",
-                      "e00d166a-5d05-49eb-8882-6ef9043df4b3": "#d02670",
-                      "1500AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28"
+                      "078fb739-3501-56c1-8d2b-c8658aeecf7a": "#24a148",
+                      "157790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#009d9a",
+                      "166215AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#007d79",
+                      "ca3fe2b2-a925-52f3-a98c-c4dfaf5804f5": "#d02670",
+                      "126627AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#da1e28"
                     }
                   },
                   {
                     "id": "familyHistoryDepression",
                     "title": "Family History of Depression",
-                    "concept": "babf617f-73c5-40e1-bcea-6e5822dd3a43"
+                    "concept": "152852AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "psychiatricHistory",
                     "title": "History of Other Psychiatric Illnesses",
-                    "concept": "129fc0a1-e9ee-441c-8f70-37931cc64b9e"
+                    "concept": "479cf503-54ae-5cf2-8b9b-18367813d289"
                   },
                   {
                     "id": "suicidalThoughts",
                     "title": "Suicidal Thoughts",
-                    "concept": "b21cdead-2bbd-49d4-8f50-3d62f2678e00"
+                    "concept": "125562AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "id": "sadpersonsRisk",
-                    "title": "Suicidal Risk (SADPERSONS)",
-                    "concept": "b9a06361-2a09-4fcb-be08-f86010cf43e4"
+                    "id": "actions",
+                    "title": "Actions",
+                    "type": "actions",
+                    "launchOptions": {
+                      "displayText": "Edit",
+                      "hideFormLauncher": false
+                    }
+                  }
+                ],
+                "formList": [
+                  {
+                    "name": "Depression Specific",
+                    "uuid": "c8fa83dd-1377-4cf4-bb83-76d61098f74d"
+                  }
+                ],
+                "launchOptions": {
+                  "displayText": "Add",
+                  "hideFormLauncher": false
+                }
+              },
+              {
+                "headerTitle": "Depression Specific",
+                "displayText": "Depression Specific",
+                "tabName": "Suicidal Risk Assessment (SADPERSONS)",
+                "hasFilter": false,
+                "encounterType": "00dbf8b0-dfc2-48c6-aeaa-546c57e67152",
+                "columns": [
+                  {
+                    "id": "patientGender",
+                    "title": "Patient Gender",
+                    "concept": "72f00424-5560-4c7f-914c-dfb979cd08e9"
+                  },
+                  {
+                    "id": "ageRisk",
+                    "title": "Age Risk",
+                    "concept": "a3011413-fd04-5bae-ba92-7b22b0b8ecc5"
+                  },
+                  {
+                    "id": "depression",
+                    "title": "Depression",
+                    "concept": "119537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "PreviousSuicideAttempts",
+                    "title": "Suicide Attempts",
+                    "concept": "3c26b151-d8e7-53fc-ac0e-1c6a87bf57fa"
+                  },
+                  {
+                    "id": "alcoholSubstanceUse ",
+                    "title": "Excessive alcohol, substance use ",
+                    "concept": "fc996ade-d9bb-4eef-bca5-31b4d1eee3d6"
+                  },
+                  {
+                    "id": "lossRationalThinking",
+                    "title": "Loss of Rational Thinking",
+                    "concept": "8bedefeb-7fe2-53c0-92a4-04d58033192a"
+                  },
+                  {
+                    "id": "civilStatus",
+                    "title": "Civil status",
+                    "concept": "1054AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "id": "organisedSuicidePlan",
+                    "title": "Organised Suicide Plan",
+                    "concept": "1c6ec490-06c1-5d52-a188-159476083136"
+                  },
+                  {
+                    "id": "lackSocialSupport",
+                    "title": "Lack of social support",
+                    "concept": "39b19b67-5362-4a06-9471-9eeaeddf1f26"
+                  },
+                  {
+                    "id": "sickness",
+                    "title": "Sickness - MLTCs",
+                    "concept": "c3b4d2ae-88f9-5a91-873d-502cedf8c26c"
+                  },
+                  {
+                    "id": "suicideRisk",
+                    "title": "Suicide Risk",
+                    "concept": "112411AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "actions",
@@ -1450,6 +1527,7 @@
           }
         }
       }
+
     }
   },
   "@openmrs/esm-ward-app": {
