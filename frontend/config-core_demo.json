@@ -174,6 +174,7 @@
                     "type": "hivStatus",
                     "isColoredTag": true,
                     "statusColorMappings": {
+                      "Normotension":"#205e32",
                       "Pre-hypertension": "#24a148",
                       "Mild hypertension": "#83A814",
                       "Moderate hypertension": "#FC8400",
@@ -543,6 +544,7 @@
                     "title": "Grade of Hypertension",
                     "concept": "165583AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "statusColorMappings": {
+                      "b118c548-0337-5df7-8fd0-5890352da9b0": "#205e32",
                       "165206AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#24a148",
                       "165203AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#83A814",
                       "165204AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": "#FC8400",
