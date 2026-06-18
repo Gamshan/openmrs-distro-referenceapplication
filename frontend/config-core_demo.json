@@ -381,6 +381,7 @@
                       "G3bA3 – Moderate to severe decrease with severely increased albuminuria (Preferred)": "#da1e28",
                       "G4A3 – Severe kidney failure with severely increased albuminuria (Preferred)": "#750000",
                       "G5A1 – Kidney failure with normal albuminuria (Preferred)": "#750000",
+                      "G5A2 – Kidney failure with moderately increased albuminuria (Preferred)": "#750000",
                       "G5A3 – Kidney failure with severely increased albuminuria (Preferred)": "#750000"
                     }
                   }
