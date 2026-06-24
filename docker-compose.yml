@@ -1,7 +1,7 @@
 services:
   gateway:
     platform: linux/amd64
-    image: gamshan/openmrs-reference-application-3-gateway:${TAG:-0.0.4}
+    image: gamshan/openmrs-reference-application-3-gateway:${TAG:-0.0.4-1}
     restart: "unless-stopped"
     depends_on:
       - frontend
@@ -11,7 +11,7 @@ services:
 
   frontend:
     platform: linux/amd64
-    image: gamshan/openmrs-reference-application-3-frontend:${TAG:-1.0.4-20}
+    image: gamshan/openmrs-reference-application-3-frontend:${TAG:-1.0.4-25}
     restart: "unless-stopped"
     environment:
       SPA_PATH: /openmrs/spa
@@ -26,7 +26,7 @@ services:
 
   backend:
     platform: linux/amd64
-    image: gamshan/openmrs-reference-application-3-backend:${TAG:-0.0.4-1}
+    image: gamshan/openmrs-reference-application-3-backend:${TAG:-0.0.4-2}
     restart: "unless-stopped"
     depends_on:
       - db

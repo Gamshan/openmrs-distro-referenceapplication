@@ -13,7 +13,7 @@ COPY spa-assemble-config.json .
 COPY spa-build-config.json .
 
 COPY openmrs-esm-form-builder-app-3.4.1-14.tgz .
-COPY openmrs-esm-patient-digipaths-app-1.0.0-8.tgz .
+COPY openmrs-esm-patient-digipaths-app-1.0.0-14.tgz .
 COPY openmrs-esm-form-engine-app-12.1.0-10.tgz .
 COPY openmrs-esm-patient-chart-app-12.1.0-3.tgz .
 
@@ -25,7 +25,7 @@ RUN if [ ! -f ./spa/index.html ]; then echo 'Build failed. Please check the logs
 #--------------------------------------------
 # Runtime Stage - Published Image
 #--------------------------------------------
-FROM nginx:1.25-alpine
+FROM nginx:1.31-alpine
 
 RUN apk update && \
     apk upgrade && \

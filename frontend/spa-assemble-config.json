@@ -34,8 +34,10 @@
     "@openmrs/esm-patient-programs-app": "next",
     "@openmrs/esm-patient-registration-app": "next",
     "@openmrs/esm-patient-search-app": "next",
+    "@openmrs/esm-patient-task-list-app": "next",
     "@openmrs/esm-patient-tests-app": "next",
     "@openmrs/esm-patient-vitals-app": "next",
+    "@openmrs/esm-patient-procedures-app": "next",
     "@openmrs/esm-primary-navigation-app": "next",
     "@openmrs/esm-reports-app": "next",
     "@openmrs/esm-service-queues-app": "next",
@@ -43,7 +45,7 @@
     "@openmrs/esm-system-admin-app": "next",
     "@openmrs/esm-user-onboarding-app": "next",
     "@openmrs/esm-ward-app": "next",
-    "@openmrs/esm-patient-digipaths-app": "file:openmrs-esm-patient-digipaths-app-1.0.0-8.tgz"
+    "@openmrs/esm-patient-digipaths-app": "file:openmrs-esm-patient-digipaths-app-1.0.0-14.tgz"
   },
   "excludedFrontendModules": []
 }
