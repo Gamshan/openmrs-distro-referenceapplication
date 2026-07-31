@@ -867,6 +867,13 @@
                     "isDate": true
                   },
                   {
+                    "id": "diabetesCondition",
+                    "title": "Diabetes Condition",
+                    "rendering": "conditionField",
+                    "conditionCode": "119481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "field": "clinicalStatus"
+                  },
+                  {
                     "id": "creatinine",
                     "title": "Creatinine (mg/dL)",
                     "concept": "164364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
