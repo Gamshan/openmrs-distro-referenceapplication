@@ -452,6 +452,13 @@
                     "isDate": true
                   },
                   {
+                    "id": "diabetesCondition",
+                    "title": "Diabetes Condition",
+                    "rendering": "conditionField",
+                    "conditionCode": "119481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "field": "clinicalStatus"
+                  },
+                  {
                     "id": "smoking",
                     "title": "Smoking Status",
                     "concept": "163201AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -865,13 +872,6 @@
                     "title": "Date and Time",
                     "type": "encounterDatetime",
                     "isDate": true
-                  },
-                  {
-                    "id": "diabetesCondition",
-                    "title": "Diabetes Condition",
-                    "rendering": "conditionField",
-                    "conditionCode": "119481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "field": "clinicalStatus"
                   },
                   {
                     "id": "creatinine",
