@@ -235,13 +235,6 @@
                 "tileHeader": "CVD Specific",
                 "columns": [
                   {
-                    "id": "familyHistoryCVD",
-                    "title": "Family History CVD",
-                    "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
-                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "hasSummary": true
-                  },
-                  {
                     "id": "anginaPain",
                     "title": "Angina / Chest Pain",
                     "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
@@ -799,11 +792,6 @@
                     "title": "Date and Time",
                     "type": "encounterDatetime",
                     "isDate": true
-                  },
-                  {
-                    "id": "familyHistoryCVD",
-                    "title": "Family History CVD",
-                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "anginaPain",
