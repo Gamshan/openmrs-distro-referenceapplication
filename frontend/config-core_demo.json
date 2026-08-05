@@ -187,20 +187,6 @@
                       "Blood Pressure Control": "#24a148",
                       "Poor hypertension control": "#da1e28"
                     }
-                  },
-                  {
-                    "id": "contraceptive",
-                    "title": "Contraceptive Use",
-                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
-                    "concept": "1386AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "hasSummary": true
-                  },
-                  {
-                    "id": "pregnancy",
-                    "title": "Currently Pregnant ",
-                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
-                    "concept": "1434AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "hasSummary": true
                   }
                 ]
               },
