@@ -242,7 +242,7 @@
                     "hasSummary": true
                   },
                   {
-                    "id": "calfPain",
+                    "id": "clavePain",
                     "title": "Clave Pain",
                     "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
                     "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -799,7 +799,7 @@
                     "concept": "125971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "id": "calfPain",
+                    "id": "clavePain",
                     "title": "Clave Pain",
                     "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
