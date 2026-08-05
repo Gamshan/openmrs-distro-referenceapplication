@@ -117,13 +117,6 @@
                     "hasSummary": true
                   },
                   {
-                    "id": "familyHistory",
-                    "title": "Family History (CVD)",
-                    "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
-                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "hasSummary": true
-                  },
-                  {
                     "id": "cvdRiskAssessment",
                     "title": "CVD Risk Assessment",
                     "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
@@ -187,20 +180,6 @@
                       "Blood Pressure Control": "#24a148",
                       "Poor hypertension control": "#da1e28"
                     }
-                  },
-                  {
-                    "id": "contraceptive",
-                    "title": "Contraceptive Use",
-                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
-                    "concept": "1386AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "hasSummary": true
-                  },
-                  {
-                    "id": "pregnancy",
-                    "title": "Currently Pregnant ",
-                    "encounterType": "34daa3d4-7ec7-453a-8ee1-12cee76fba8b",
-                    "concept": "1434AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "hasSummary": true
                   }
                 ]
               },
@@ -263,8 +242,8 @@
                     "hasSummary": true
                   },
                   {
-                    "id": "calfPain",
-                    "title": "Clave Pain",
+                    "id": "calvesPain",
+                    "title": "Calves Pain",
                     "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
                     "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "hasSummary": true
@@ -452,14 +431,16 @@
                     "isDate": true
                   },
                   {
+                    "id": "diabetesCondition",
+                    "title": "Condition",
+                    "rendering": "conditionField",
+                    "conditionCode": "119481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "field": "code"
+                  },
+                  {
                     "id": "smoking",
                     "title": "Smoking Status",
                     "concept": "163201AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  },
-                  {
-                    "id": "familyHistory",
-                    "title": "Family History (Premature CVD)",
-                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "cvdRiskAssessment",
@@ -818,8 +799,8 @@
                     "concept": "125971AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
-                    "id": "calfPain",
-                    "title": "Clave Pain",
+                    "id": "calvesPain",
+                    "title": "Calves Pain",
                     "concept": "116734AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
@@ -865,13 +846,6 @@
                     "title": "Date and Time",
                     "type": "encounterDatetime",
                     "isDate": true
-                  },
-                  {
-                    "id": "diabetesCondition",
-                    "title": "Diabetes Condition",
-                    "rendering": "conditionField",
-                    "conditionCode": "119481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "field": "clinicalStatus"
                   },
                   {
                     "id": "creatinine",
