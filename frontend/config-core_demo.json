@@ -117,13 +117,6 @@
                     "hasSummary": true
                   },
                   {
-                    "id": "familyHistory",
-                    "title": "Family History (CVD)",
-                    "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
-                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "hasSummary": true
-                  },
-                  {
                     "id": "cvdRiskAssessment",
                     "title": "CVD Risk Assessment",
                     "encounterType": "adf45dc4-bd3b-48a5-aac7-ecf30988cb5c",
@@ -234,6 +227,13 @@
               {
                 "tileHeader": "CVD Specific",
                 "columns": [
+                  {
+                    "id": "familyHistoryCVD",
+                    "title": "Family History CVD",
+                    "encounterType": "77a4cdd6-0911-4d66-9f35-d564875a4362",
+                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true
+                  },
                   {
                     "id": "anginaPain",
                     "title": "Angina / Chest Pain",
@@ -441,11 +441,6 @@
                     "id": "smoking",
                     "title": "Smoking Status",
                     "concept": "163201AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  },
-                  {
-                    "id": "familyHistory",
-                    "title": "Family History (Premature CVD)",
-                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "cvdRiskAssessment",
@@ -792,6 +787,11 @@
                     "title": "Date and Time",
                     "type": "encounterDatetime",
                     "isDate": true
+                  },
+                  {
+                    "id": "familyHistoryCVD",
+                    "title": "Family History CVD",
+                    "concept": "151928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   },
                   {
                     "id": "anginaPain",
