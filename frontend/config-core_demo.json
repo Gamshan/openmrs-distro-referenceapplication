@@ -8,7 +8,7 @@
       },
       "patient-chart-dashboard-slot": {
         "add": [
-          "nav-group#ClinicalViews"
+          "clinical-views-nav-group"
         ],
         "configure": {
           "nav-group#ClinicalViews": {
